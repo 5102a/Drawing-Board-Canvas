@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      border: 0;
+      margin: 0;
+      font-size: 10px;
+      user-select: none;
+    }
+
+    #draw {
+      position: relative;
+      width: 800px;
+      height: 400px;
+      background-color: rgb(20, 163, 220)
+    }
+
+    #head {
+      position: absolute;
+      width: 100px;
+      height: 250px;
+      background-color: rgb(228, 192, 199);
+    }
+
+    #footer {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      top: 250px;
+      width: 100px;
+      height: 100px;
+      background-color: rgb(197, 43, 74);
+    }
+
+    .btn {
+      margin: 8px;
+    }
+
+    #canvas {
+      position: absolute;
+      margin-left: 150px;
+      margin-top: 20px;
+    }
+
+    input {
+      margin: 5px;
+    }
+
+    .colors {
+      width: 40%;
+      height: 20px;
+    }
+
+    .ranges {
+      width: 90%;
+    }
+    .selected{
+      background-color: blue;
+    }
+    #clear:active{
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="draw">
+    <div id="head">
+      <input id="color" type="color" class="colors" value="#000000">画笔颜色</input>
+      <input id="bgc" type="color" class="colors" value="#ffffff">画板颜色</input>
+      <input id="lineWidthSmall" class="ranges" type="range" value="0.01" min="0.002" max="0.02" step="0.001">画笔微调~<span
+        id="text1"></span></input>
+      <input id="lineWidthBig" class="ranges" type="range" value="2" min="0" max="10" step="0.01">画笔粗调~<span
+        id="text2"></span></input>
+      <input id="shadowBlur" class="ranges" type="range" value="1" min="0" max="10" step="0.01">画笔虚化~<span
+        id="text3"></span></input>
+    </div>
+    <div id="footer">
+      <button id="pen" class="btn selected">画笔</button>
+      <button id="line" class="btn">直线</button>
+      <button id="rect" class="btn">矩形</button>
+      <button id="cir" class="btn">圆形</button>
+      <button id="eraser" class="btn">橡皮</button>
+      <button id="clear" class="btn">清空</button>
+    </div>
+
+
+    <canvas id="canvas" width="600" height="360"></canvas>
+  </div>
+
+  <script>
+    // 获取画布
+    const canvas = document.querySelector('#canvas')
+    // 获取上下文
+    const ctx = canvas.getContext('2d')
+
+    /* ------------------------------定义全局变量---------------------------*/
+    // 定义鼠标按下
+    let isPressDown = false
+    // 当前模式
+    let curMode = 'penMode'
+    // 记录按下坐标
+    let pressPos = null
+
+    /* ------------------------------定义函数---------------------------*/
+    // 获取鼠标相对于画板的坐标
+    const getMousePos = function (canvas, clientX, clientY) {
+      const rect = canvas.getBoundingClientRect()
+      return {
+        x: clientX - rect.left,
+        y: clientY - rect.top
+      }
+    }
+    // 高亮选中
+    const selected = function (ele) {
+      const buttons=document.querySelectorAll('.btn')
+      // 排他
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].className='btn'
+      }
+      ele.className='btn selected'
+    }
+    /* -----------------各类模式----------------*/
+    const paint = (function () {
+      const obj = {}
+      // 画笔模式
+      obj.penMode = function (pos) {
+        ctx.lineTo(pos.x, pos.y)
+        ctx.stroke()
+        ctx.save()
+      }
+      // 直线模式
+      obj.lineMode = function (pos) {
+        ctx.lineTo(pos.x, pos.y)
+        ctx.stroke()
+        ctx.save()
+      }
+      // 矩形模式
+      obj.rectMode = function (pos) {
+        ctx.rect(pressPos.x, pressPos.y, pos.x - pressPos.x, pos.y - pressPos.y)
+        ctx.stroke()
+        ctx.save()
+      }
+      // 圆形模式
+      obj.cirMode = function (pos) {
+        const cx = (pos.x + pressPos.x) / 2
+        const cy = (pos.y + pressPos.y) / 2
+        const dx = Math.abs(pos.x - pressPos.x)
+        const dy = Math.abs(pos.y - pressPos.y)
+        const r = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2)) / 2
+        ctx.arc(cx, cy, r, 0, 2 * Math.PI)
+        ctx.stroke()
+        ctx.save()
+      }
+      // 橡皮模式
+      obj.eraserMode = function (pos) {
+        ctx.save()
+        ctx.moveTo(pos.x,pos.y)
+        ctx.arc(pos.x,pos.y,lineWidthSmall.value * 1 + lineWidthBig.value * 1,0,2*Math.PI)
+        ctx.clip()
+        ctx.clearRect(0,0,canvas.width,canvas.height)
+        ctx.restore()
+      }
+      return function (mode, pos) {
+        obj[mode](pos)
+      }
+    })()
+    /* -----------------初始化函数----------------*/
+    // 初始化画板
+    const init = function () {
+      // 画板颜色
+      canvas.style.backgroundColor = '#ffffff'
+      // 虚化颜色
+      ctx.shadowColor = btnColor.value
+      // 虚化值
+      ctx.shadowBlur = shadowBlur.value
+      // 画笔粗细
+      ctx.lineWidth = lineWidthSmall.value * 1 + lineWidthBig.value * 1
+      // 画笔颜色
+      ctx.strokeStyle = btnColor.value
+
+      // 显示滑动值
+      lineWidthSmallSpan.innerHTML = lineWidthSmall.value
+      lineWidthBigSpan.innerHTML = lineWidthBig.value
+      shadowBlurSpan.innerHTML = shadowBlur.value
+    }
+
+    /* ------------------------------获取DOM---------------------------*/
+    // 获取画笔颜色
+    const btnColor = document.querySelector('#color')
+    // 获取画板颜色
+    const btnBgc = document.querySelector('#bgc')
+    // 获取画笔粗细微调
+    const lineWidthSmall = document.querySelector('#lineWidthSmall')
+    const lineWidthSmallSpan = document.querySelector('#text1')
+    // 获取画笔粗细粗调
+    const lineWidthBig = document.querySelector('#lineWidthBig')
+    const lineWidthBigSpan = document.querySelector('#text2')
+    // 获取画笔虚化
+    const shadowBlur = document.querySelector('#shadowBlur')
+    const shadowBlurSpan = document.querySelector('#text3')
+    // 获取画笔
+    const btnPen = document.querySelector('#pen')
+    // 获取直线
+    const btnLine = document.querySelector('#line')
+    // 获取矩形
+    const btnRect = document.querySelector('#rect')
+    // 获取圆形
+    const btnCir = document.querySelector('#cir')
+    // 获取橡皮擦
+    const btnEraser = document.querySelector('#eraser')
+    // 获取清空按钮
+    const btnClear = document.querySelector('#clear')
+
+    /* ------------------------------注册事件---------------------------*/
+    // 改变画笔颜色
+    btnColor.onchange = function () {
+      console.dir(btnColor.value)
+      ctx.shadowColor = btnColor.value
+      ctx.strokeStyle = btnColor.value
+    }
+    // 改变画板颜色
+    btnBgc.onchange = function () {
+      console.dir(btnBgc.value)
+      canvas.style.backgroundColor = btnBgc.value
+    }
+    // 改变画笔粗细微调
+    lineWidthSmall.onchange = function () {
+      ctx.lineWidth = lineWidthSmall.value * 1 + lineWidthBig.value * 1
+      lineWidthSmallSpan.innerHTML = lineWidthSmall.value
+      console.dir(lineWidthSmall.value)
+    }
+    // 改变画笔粗细粗调
+    lineWidthBig.onchange = function () {
+      ctx.lineWidth = lineWidthSmall.value * 1 + lineWidthBig.value * 1
+      lineWidthBigSpan.innerHTML = lineWidthBig.value
+      console.dir(lineWidthBig.value)
+    }
+    // 改变画笔虚化
+    shadowBlur.onchange = function () {
+      ctx.shadowBlur = shadowBlur.value * 1
+      shadowBlurSpan.innerHTML = shadowBlur.value
+      console.dir(shadowBlur.value)
+    }
+    // 使用画笔
+    btnPen.onclick = function (e) {
+      console.log('使用画笔')
+      selected(btnPen)
+      curMode = 'penMode'
+    }
+    // 使用直线
+    btnLine.onclick = function (e) {
+      console.log('使用直线')
+      selected(btnLine)
+      curMode = 'lineMode'
+    }
+    // 使用矩形
+    btnRect.onclick = function (e) {
+      console.log('使用矩形')
+      selected(btnRect)
+      curMode = 'rectMode'
+    }
+    // 使用圆形
+    btnCir.onclick = function (e) {
+      console.log('使用圆形')
+      selected(btnCir)
+      curMode = 'cirMode'
+    }
+    // 使用橡皮
+    btnEraser.onclick = function (e) {
+      console.log('使用橡皮')
+      selected(btnEraser)
+      curMode = 'eraserMode'
+    }
+    // 清空按钮
+    btnClear.onclick = function (e) {
+      console.log('清空按钮')
+      // selected(btnClear)
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+    }
+    /* --------------------------------------画板事件-------------------------------- */
+    /* -------------------------画板--------------------- */
+    // 画板按下
+    canvas.onmousedown = function (e) {
+      // console.log(e.clientX, e.clientY);
+      isPressDown = true // 鼠标设置按下
+      const pos = getMousePos(canvas, e.clientX, e.clientY)
+      pressPos = pos
+      ctx.save()
+      ctx.beginPath()
+      switch (curMode) {
+        case 'rectMode':
+        case 'cirMode':
+          break;
+        case 'lineMode':
+        case 'penMode':
+        case 'eraserMode':
+          ctx.moveTo(pos.x, pos.y)
+          break;
+        default:
+          break;
+      }
+    }
+
+    // 画板移动
+    canvas.onmousemove = function (e) {
+      if (isPressDown) {
+        switch (curMode) {
+          case 'lineMode':
+          case 'rectMode':
+          case 'cirMode':
+            break;
+          case 'penMode':
+          case 'eraserMode':
+            const pos = getMousePos(canvas, e.clientX, e.clientY)
+            paint(curMode, pos)
+            break;
+          default:
+            break;
+        }
+      }
+    }
+
+    // 画板抬起
+    canvas.onmouseup = function (e) {
+      isPressDown = false // 鼠标设置为抬起
+      switch (curMode) {
+        case 'penMode':
+        case 'eraserMode':
+          break;
+        case 'lineMode':
+        case 'rectMode':
+        case 'cirMode':
+          const pos = getMousePos(canvas, e.clientX, e.clientY)
+          paint(curMode, pos)
+          break;
+        default:
+          break;
+      }
+    }
+
+    // 初始化
+    init()
+  </script>
+</body>
+
+</html>
