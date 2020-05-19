@@ -1,14 +1,14 @@
 # Drawing-Board-canvas-
 canvas原生js实现简单画板
 
-<!DOCTYPE html>
-<html lang="zh-CN">
+&it;!DOCTYPE html&gt;
+&it;html lang="zh-CN"&gt;
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
+&it;head&gt;
+  &it;meta charset="UTF-8"&gt;
+  &it;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &it;title&gt;Document&it;/title&gt;
+  &it;style&gt;
     * {
       border: 0;
       margin: 0;
@@ -86,38 +86,38 @@ canvas原生js实现简单画板
     #restore:active {
       background-color: rgb(166, 255, 0);
     }
-  </style>
-</head>
+  &it;/style&gt;
+&it;/head&gt;
 
-<body>
-  <div id="draw">
-    <div id="tools">
-      <h2>工具栏</h2>
-      <div id="header">
-        <input id="color" type="color" class="colors" value="#000000">画笔颜色</input>
-        <input id="bgc" type="color" class="colors" value="#ffffff">画板颜色</input>
-        <input id="lineWidthSmall" class="ranges" type="range" value="0.01" min="0.002" max="0.02"
-          step="0.001">画笔微调~<span id="text1"></span></input>
-        <input id="lineWidthBig" class="ranges" type="range" value="2" min="0" max="10" step="0.01">画笔粗调~<span
-          id="text2"></span></input>
-        <input id="shadowBlur" class="ranges" type="range" value="1" min="0" max="10" step="0.01">画笔虚化~<span
-          id="text3"></span></input>
-      </div>
-      <div id="footer">
-        <button id="pen" class="btn selected">画笔</button>
-        <button id="line" class="btn">直线</button>
-        <button id="rect" class="btn">矩形</button>
-        <button id="cir" class="btn">圆形</button>
-        <button id="eraser" class="btn">橡皮</button>
-        <button id="clear" class="btn">清空</button>
-        <button id="back" class="btn">撤销</button>
-        <button id="restore" class="btn">恢复</button>
-      </div>
-    </div>
-    <canvas id="canvas" width="700" height="400"></canvas>
-  </div>
+&it;body&gt;
+  &it;div id="draw"&gt;
+    &it;div id="tools"&gt;
+      &it;h2&gt;工具栏&it;/h2&gt;
+      &it;div id="header"&gt;
+        &it;input id="color" type="color" class="colors" value="#000000"&gt;画笔颜色&it;/input&gt;
+        &it;input id="bgc" type="color" class="colors" value="#ffffff"&gt;画板颜色&it;/input&gt;
+        &it;input id="lineWidthSmall" class="ranges" type="range" value="0.01" min="0.002" max="0.02"
+          step="0.001"&gt;画笔微调~&it;span id="text1"&gt;&it;/span&gt;&it;/input&gt;
+        &it;input id="lineWidthBig" class="ranges" type="range" value="2" min="0" max="10" step="0.01"&gt;画笔粗调~&it;span
+          id="text2"&gt;&it;/span&gt;&it;/input&gt;
+        &it;input id="shadowBlur" class="ranges" type="range" value="1" min="0" max="10" step="0.01"&gt;画笔虚化~&it;span
+          id="text3"&gt;&it;/span&gt;&it;/input&gt;
+      &it;/div&gt;
+      &it;div id="footer"&gt;
+        &it;button id="pen" class="btn selected"&gt;画笔&it;/button&gt;
+        &it;button id="line" class="btn"&gt;直线&it;/button&gt;
+        &it;button id="rect" class="btn"&gt;矩形&it;/button&gt;
+        &it;button id="cir" class="btn"&gt;圆形&it;/button&gt;
+        &it;button id="eraser" class="btn"&gt;橡皮&it;/button&gt;
+        &it;button id="clear" class="btn"&gt;清空&it;/button&gt;
+        &it;button id="back" class="btn"&gt;撤销&it;/button&gt;
+        &it;button id="restore" class="btn"&gt;恢复&it;/button&gt;
+      &it;/div&gt;
+    &it;/div&gt;
+    &it;canvas id="canvas" width="700" height="400"&gt;&it;/canvas&gt;
+  &it;/div&gt;
 
-  <script>
+  &it;script&gt;
     // 获取画布
     const canvas = document.querySelector('#canvas')
     // 获取上下文
@@ -497,7 +497,7 @@ canvas原生js实现简单画板
 
     // 初始化
     init()
-  </script>
-</body>
+  &it;/script&gt;
+&it;/body&gt;
 
-</html>
+&it;/html&gt;
