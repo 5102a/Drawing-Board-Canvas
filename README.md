@@ -1,14 +1,22 @@
-# Drawing-Board-canvas-
+# canvas原生js画板
+
 canvas原生js实现简单画板
 
-\<!DOCTYPE html\>
-\<html lang="zh-CN"\>
+## [在线测试画板](https://1015355299.github.io/My_Growth/html/canvas.html)
 
-\<head\>
-  \<meta charset="UTF-8"\>
-  \<meta name="viewport" content="width=device-width, initial-scale=1.0"\>
-  \<title\>Document\</title\>
-  \<style\>
+![预览](./photo.png)
+
+代码如下
+
+```canvas画板
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
     * {
       border: 0;
       margin: 0;
@@ -86,38 +94,38 @@ canvas原生js实现简单画板
     #restore:active {
       background-color: rgb(166, 255, 0);
     }
-  \</style\>
-\</head\>
+  </style>
+</head>
 
-\<body\>
-  \<div id="draw"\>
-    \<div id="tools"\>
-      \<h2\>工具栏\</h2\>
-      \<div id="header"\>
-        \<input id="color" type="color" class="colors" value="#000000"\>画笔颜色\</input\>
-        \<input id="bgc" type="color" class="colors" value="#ffffff"\>画板颜色\</input\>
-        \<input id="lineWidthSmall" class="ranges" type="range" value="0.01" min="0.002" max="0.02"
-          step="0.001"\>画笔微调~\<span id="text1"\>\</span\>\</input\>
-        \<input id="lineWidthBig" class="ranges" type="range" value="2" min="0" max="10" step="0.01"\>画笔粗调~\<span
-          id="text2"\>\</span\>\</input\>
-        \<input id="shadowBlur" class="ranges" type="range" value="1" min="0" max="10" step="0.01"\>画笔虚化~\<span
-          id="text3"\>\</span\>\</input\>
-      \</div\>
-      \<div id="footer"\>
-        \<button id="pen" class="btn selected"\>画笔\</button\>
-        \<button id="line" class="btn"\>直线\</button\>
-        \<button id="rect" class="btn"\>矩形\</button\>
-        \<button id="cir" class="btn"\>圆形\</button\>
-        \<button id="eraser" class="btn"\>橡皮\</button\>
-        \<button id="clear" class="btn"\>清空\</button\>
-        \<button id="back" class="btn"\>撤销\</button\>
-        \<button id="restore" class="btn"\>恢复\</button\>
-      \</div\>
-    \</div\>
-    \<canvas id="canvas" width="700" height="400"\>\</canvas\>
-  \</div\>
+<body>
+  <div id="draw">
+    <div id="tools">
+      <h2>工具栏</h2>
+      <div id="header">
+        <input id="color" type="color" class="colors" value="#000000">画笔颜色</input>
+        <input id="bgc" type="color" class="colors" value="#ffffff">画板颜色</input>
+        <input id="lineWidthSmall" class="ranges" type="range" value="0.01" min="0.002" max="0.02"
+          step="0.001">画笔微调~<span id="text1"></span></input>
+        <input id="lineWidthBig" class="ranges" type="range" value="2" min="0" max="10" step="0.01">画笔粗调~<span
+          id="text2"></span></input>
+        <input id="shadowBlur" class="ranges" type="range" value="1" min="0" max="10" step="0.01">画笔虚化~<span
+          id="text3"></span></input>
+      </div>
+      <div id="footer">
+        <button id="pen" class="btn selected">画笔</button>
+        <button id="line" class="btn">直线</button>
+        <button id="rect" class="btn">矩形</button>
+        <button id="cir" class="btn">圆形</button>
+        <button id="eraser" class="btn">橡皮</button>
+        <button id="clear" class="btn">清空</button>
+        <button id="back" class="btn">撤销</button>
+        <button id="restore" class="btn">恢复</button>
+      </div>
+    </div>
+    <canvas id="canvas" width="700" height="400"></canvas>
+  </div>
 
-  \<script\>
+  <script>
     // 获取画布
     const canvas = document.querySelector('#canvas')
     // 获取上下文
@@ -497,7 +505,17 @@ canvas原生js实现简单画板
 
     // 初始化
     init()
-  \</script\>
-\</body\>
+  </script>
+</body>
 
-\</html\>
+</html>
+```
+
+拓展建议:
+
+- 实现保存canvas画板数据为图片下载
+- 实现选中功能
+- 实现旋转功能
+- 实现画板放大缩小,可自定义画板大小功能
+- 实现可输入文本功能
+- 等等...
