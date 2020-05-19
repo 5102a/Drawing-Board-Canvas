@@ -1,14 +1,14 @@
 # Drawing-Board-canvas-
 canvas原生js实现简单画板
 
-&it;!DOCTYPE html&gt;
-&it;html lang="zh-CN"&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-CN"&gt;
 
-&it;head&gt;
-  &it;meta charset="UTF-8"&gt;
-  &it;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &it;title&gt;Document&it;/title&gt;
-  &it;style&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+  &lt;style&gt;
     * {
       border: 0;
       margin: 0;
@@ -86,38 +86,38 @@ canvas原生js实现简单画板
     #restore:active {
       background-color: rgb(166, 255, 0);
     }
-  &it;/style&gt;
-&it;/head&gt;
+  &lt;/style&gt;
+&lt;/head&gt;
 
-&it;body&gt;
-  &it;div id="draw"&gt;
-    &it;div id="tools"&gt;
-      &it;h2&gt;工具栏&it;/h2&gt;
-      &it;div id="header"&gt;
-        &it;input id="color" type="color" class="colors" value="#000000"&gt;画笔颜色&it;/input&gt;
-        &it;input id="bgc" type="color" class="colors" value="#ffffff"&gt;画板颜色&it;/input&gt;
-        &it;input id="lineWidthSmall" class="ranges" type="range" value="0.01" min="0.002" max="0.02"
-          step="0.001"&gt;画笔微调~&it;span id="text1"&gt;&it;/span&gt;&it;/input&gt;
-        &it;input id="lineWidthBig" class="ranges" type="range" value="2" min="0" max="10" step="0.01"&gt;画笔粗调~&it;span
-          id="text2"&gt;&it;/span&gt;&it;/input&gt;
-        &it;input id="shadowBlur" class="ranges" type="range" value="1" min="0" max="10" step="0.01"&gt;画笔虚化~&it;span
-          id="text3"&gt;&it;/span&gt;&it;/input&gt;
-      &it;/div&gt;
-      &it;div id="footer"&gt;
-        &it;button id="pen" class="btn selected"&gt;画笔&it;/button&gt;
-        &it;button id="line" class="btn"&gt;直线&it;/button&gt;
-        &it;button id="rect" class="btn"&gt;矩形&it;/button&gt;
-        &it;button id="cir" class="btn"&gt;圆形&it;/button&gt;
-        &it;button id="eraser" class="btn"&gt;橡皮&it;/button&gt;
-        &it;button id="clear" class="btn"&gt;清空&it;/button&gt;
-        &it;button id="back" class="btn"&gt;撤销&it;/button&gt;
-        &it;button id="restore" class="btn"&gt;恢复&it;/button&gt;
-      &it;/div&gt;
-    &it;/div&gt;
-    &it;canvas id="canvas" width="700" height="400"&gt;&it;/canvas&gt;
-  &it;/div&gt;
+&lt;body&gt;
+  &lt;div id="draw"&gt;
+    &lt;div id="tools"&gt;
+      &lt;h2&gt;工具栏&lt;/h2&gt;
+      &lt;div id="header"&gt;
+        &lt;input id="color" type="color" class="colors" value="#000000"&gt;画笔颜色&lt;/input&gt;
+        &lt;input id="bgc" type="color" class="colors" value="#ffffff"&gt;画板颜色&lt;/input&gt;
+        &lt;input id="lineWidthSmall" class="ranges" type="range" value="0.01" min="0.002" max="0.02"
+          step="0.001"&gt;画笔微调~&lt;span id="text1"&gt;&lt;/span&gt;&lt;/input&gt;
+        &lt;input id="lineWidthBig" class="ranges" type="range" value="2" min="0" max="10" step="0.01"&gt;画笔粗调~&lt;span
+          id="text2"&gt;&lt;/span&gt;&lt;/input&gt;
+        &lt;input id="shadowBlur" class="ranges" type="range" value="1" min="0" max="10" step="0.01"&gt;画笔虚化~&lt;span
+          id="text3"&gt;&lt;/span&gt;&lt;/input&gt;
+      &lt;/div&gt;
+      &lt;div id="footer"&gt;
+        &lt;button id="pen" class="btn selected"&gt;画笔&lt;/button&gt;
+        &lt;button id="line" class="btn"&gt;直线&lt;/button&gt;
+        &lt;button id="rect" class="btn"&gt;矩形&lt;/button&gt;
+        &lt;button id="cir" class="btn"&gt;圆形&lt;/button&gt;
+        &lt;button id="eraser" class="btn"&gt;橡皮&lt;/button&gt;
+        &lt;button id="clear" class="btn"&gt;清空&lt;/button&gt;
+        &lt;button id="back" class="btn"&gt;撤销&lt;/button&gt;
+        &lt;button id="restore" class="btn"&gt;恢复&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;canvas id="canvas" width="700" height="400"&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
 
-  &it;script&gt;
+  &lt;script&gt;
     // 获取画布
     const canvas = document.querySelector('#canvas')
     // 获取上下文
@@ -497,7 +497,7 @@ canvas原生js实现简单画板
 
     // 初始化
     init()
-  &it;/script&gt;
-&it;/body&gt;
+  &lt;/script&gt;
+&lt;/body&gt;
 
-&it;/html&gt;
+&lt;/html&gt;
