@@ -1,1 +1,46 @@
-<mxfile host="app.diagrams.net" modified="2021-05-13T09:04:17.017Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" version="14.6.12" etag="3_kaTdU2GyMgbbQ1uzef" type="github"><diagram id="EXSK7UW9LjUbuVWIK-7f">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-13T09:11:32.370Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="jcQW_4K5IYcVo02zIN64" version="14.6.12" type="github">
+  <diagram id="EXSK7UW9LjUbuVWIK-7f" name="Page-1">
+    <mxGraphModel dx="899" dy="558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JnirWKJu8oiId7rXM8OC-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JnirWKJu8oiId7rXM8OC-1" target="JnirWKJu8oiId7rXM8OC-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JnirWKJu8oiId7rXM8OC-1" value="new Vue()&lt;br&gt;创建实例" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="90" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JnirWKJu8oiId7rXM8OC-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JnirWKJu8oiId7rXM8OC-2" target="JnirWKJu8oiId7rXM8OC-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JnirWKJu8oiId7rXM8OC-2" value="&lt;div style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;initLifecycle()&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;初始化生命周期&lt;/font&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="260" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JnirWKJu8oiId7rXM8OC-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="JnirWKJu8oiId7rXM8OC-4" target="JnirWKJu8oiId7rXM8OC-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JnirWKJu8oiId7rXM8OC-4" value="&lt;div style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;initEvents()&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;初始化事件&lt;/font&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="430" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JnirWKJu8oiId7rXM8OC-9" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JnirWKJu8oiId7rXM8OC-6" target="JnirWKJu8oiId7rXM8OC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JnirWKJu8oiId7rXM8OC-6" value="&lt;div style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;initRender()&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;初始化渲染&lt;/font&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="590" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JnirWKJu8oiId7rXM8OC-8" value="&lt;div style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;initRender()&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-family: &amp;#34;consolas&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: 14px ; line-height: 19px&quot;&gt;&lt;font style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;初始化渲染&lt;/font&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="760" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JnirWKJu8oiId7rXM8OC-10" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="710" as="sourcePoint" />
+            <mxPoint x="220" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JnirWKJu8oiId7rXM8OC-12" value="&lt;font size=&quot;1&quot;&gt;beforeCreate&lt;/font&gt;" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="100" y="690" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
