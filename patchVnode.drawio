@@ -1,1 +1,203 @@
-<mxfile host="app.diagrams.net" modified="2021-05-25T14:36:48.039Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" version="14.7.1" etag="-VEnYvhDohwzhICgWz23" type="github"><diagram id="NvxiG9IFN-roQ-KLTXYO">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-25T14:57:49.724Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="uRL9OVNvIuiJeir-VzvZ" version="14.7.1" type="github">
+  <diagram id="NvxiG9IFN-roQ-KLTXYO" name="第 1 页">
+    <mxGraphModel dx="1284" dy="687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1527" pageHeight="2069" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-1" target="AcDR_jwVzpsYZPKfUcYp-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-1" value="patchVnode()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="400" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-2" target="AcDR_jwVzpsYZPKfUcYp-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-6" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AcDR_jwVzpsYZPKfUcYp-4">
+          <mxGeometry x="-0.103" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-8" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-2" target="AcDR_jwVzpsYZPKfUcYp-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-2" value="oldVnode与vnode相同？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="350" y="190" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-3" value="return" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="670" y="290" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-7" target="AcDR_jwVzpsYZPKfUcYp-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-7" value="根据需要克隆vnode" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="400" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-12" target="AcDR_jwVzpsYZPKfUcYp-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-14" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AcDR_jwVzpsYZPKfUcYp-13">
+          <mxGeometry x="-0.244" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-16" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-12" target="AcDR_jwVzpsYZPKfUcYp-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-12" value="oldVnode是占位符？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="350" y="450" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-20" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-15" target="AcDR_jwVzpsYZPKfUcYp-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-23" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-15" target="AcDR_jwVzpsYZPKfUcYp-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="720" />
+              <mxPoint x="460" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-15" value="oldVnode是静态节点？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="350" y="600" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-19" value="复用组件实例" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="660" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-22" target="AcDR_jwVzpsYZPKfUcYp-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-22" value="执行vnode.data.hook中的所有prepatch钩子，更新组件属性" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="380" y="750" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-24" target="AcDR_jwVzpsYZPKfUcYp-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-24" value="执行vnode节点属性所有的update钩子，以及vnode.data.hook中的update钩子" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="375" y="890" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-26" target="AcDR_jwVzpsYZPKfUcYp-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="743" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-31" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AcDR_jwVzpsYZPKfUcYp-30">
+          <mxGeometry x="-0.0181" y="-4" relative="1" as="geometry">
+            <mxPoint x="5" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-32" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-26" target="AcDR_jwVzpsYZPKfUcYp-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-26" value="vnode是文本节点？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1050" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-28" target="AcDR_jwVzpsYZPKfUcYp-54">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="735" y="1870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-28" value="如果oldVnode与vnode的文本不同则更新文本内容" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1140" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-33" target="AcDR_jwVzpsYZPKfUcYp-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-38" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AcDR_jwVzpsYZPKfUcYp-37">
+          <mxGeometry x="-0.3818" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-39" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-33" target="AcDR_jwVzpsYZPKfUcYp-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-33" value="oldVnode和vnode都存在子节点？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="325" y="1200" width="270" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-42" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-34" target="AcDR_jwVzpsYZPKfUcYp-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-34" target="AcDR_jwVzpsYZPKfUcYp-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-45" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AcDR_jwVzpsYZPKfUcYp-44">
+          <mxGeometry x="-0.3133" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-34" value="只存在vnode的子节点？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1360" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.447;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-35" target="AcDR_jwVzpsYZPKfUcYp-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-48" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AcDR_jwVzpsYZPKfUcYp-47">
+          <mxGeometry x="-0.2925" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-49" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-35" target="AcDR_jwVzpsYZPKfUcYp-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="1680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-35" value="只存在oldVnode的子节点？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1520" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-36" target="AcDR_jwVzpsYZPKfUcYp-54">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="1320" />
+              <mxPoint x="40" y="1870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-36" value="新旧子节点不相同，则更新子节点updateChildren()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1290" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-43" target="AcDR_jwVzpsYZPKfUcYp-54">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="1470" />
+              <mxPoint x="40" y="1870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-43" value="清空oldVnode文本内容，并创建vnode的子节点到dom树中" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="75" y="1440" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-46" target="AcDR_jwVzpsYZPKfUcYp-54">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="1630" />
+              <mxPoint x="40" y="1870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-46" value="从dom树种移除oldVnode子节点对应的dom" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="85" y="1600" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AcDR_jwVzpsYZPKfUcYp-50" target="AcDR_jwVzpsYZPKfUcYp-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-50" value="如果oldVnode存在文本内容则清空" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="375" y="1700" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AcDR_jwVzpsYZPKfUcYp-54" value="执行vnode.data.hook中的所有postpatch钩子" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="375" y="1840" width="170" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
