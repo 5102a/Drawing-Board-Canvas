@@ -1,1 +1,192 @@
-<mxfile host="app.diagrams.net" modified="2021-05-25T12:22:51.964Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" version="14.7.1" etag="Vk08LjqlEAEK8O1ChKJr" type="github"><diagram id="gYUjb9bJMufSqb-NbsyG">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-25T13:20:49.037Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="v182ZauV9cQpY1CyVMTh" version="14.7.1" type="github">
+  <diagram id="gYUjb9bJMufSqb-NbsyG" name="第 1 页">
+    <mxGraphModel dx="1058" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1527" pageHeight="2069" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-1" target="6czE2A7BAYCyhHoQ09k4-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-1" value="patch" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="304" y="40" width="106" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-2" value="return" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="537" y="365" width="106" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-3" value="patch" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="106" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-4" target="6czE2A7BAYCyhHoQ09k4-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-4" value="递归调用oldVnode节点的属性destroy钩子函数" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="703" y="295" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-7" value="不存在" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-5" target="6czE2A7BAYCyhHoQ09k4-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-15" value="存在" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-5" target="6czE2A7BAYCyhHoQ09k4-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="357" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-5" value="&lt;font size=&quot;1&quot;&gt;vnode？&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="257" y="120" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-9" value="不存在" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-6" target="6czE2A7BAYCyhHoQ09k4-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-6" target="6czE2A7BAYCyhHoQ09k4-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-19" value="存在" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6czE2A7BAYCyhHoQ09k4-10">
+          <mxGeometry x="0.0239" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-6" value="&lt;font size=&quot;1&quot;&gt;oldVnode？&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="490" y="220" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-16" target="6czE2A7BAYCyhHoQ09k4-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-22" value="不存在" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6czE2A7BAYCyhHoQ09k4-21">
+          <mxGeometry x="-0.1092" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-25" value="存在" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-16" target="6czE2A7BAYCyhHoQ09k4-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-16" value="&lt;font size=&quot;1&quot;&gt;oldVnode？&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="257" y="280" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-20" value="&lt;font size=&quot;1&quot;&gt;createElm()&lt;/font&gt;&lt;br&gt;根据vnode创建真实dom" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="30" y="360" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-24" target="6czE2A7BAYCyhHoQ09k4-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="783" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-28" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6czE2A7BAYCyhHoQ09k4-27">
+          <mxGeometry x="-0.1395" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-31" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6czE2A7BAYCyhHoQ09k4-27">
+          <mxGeometry x="-0.1267" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-33" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-24" target="6czE2A7BAYCyhHoQ09k4-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="359.79999999999995" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-24" value="&lt;span style=&quot;font-size: x-small&quot;&gt;oldVnode对应的节点是真实节点，且oldVnode和vnode是相同节点？&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;spacingLeft=0;spacingRight=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="440" width="519.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-32" value="&lt;font size=&quot;1&quot;&gt;patchVnode()&lt;br&gt;进一步对比新旧vnode并进行差异化更新&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="690" y="560" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-36" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-34" target="6czE2A7BAYCyhHoQ09k4-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="359.7550000000001" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-34" target="6czE2A7BAYCyhHoQ09k4-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="1070" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="715" />
+              <mxPoint x="120" y="1300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-52" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6czE2A7BAYCyhHoQ09k4-51">
+          <mxGeometry x="-0.3288" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-34" value="&lt;font size=&quot;1&quot;&gt;oldVnode对应的节点是真实dom？&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="209.62" y="660" width="300.25" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-37" target="6czE2A7BAYCyhHoQ09k4-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-37" value="&lt;font size=&quot;1&quot;&gt;创建空的vnode代替oldVnode&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="278.39000000000004" y="1130" width="162.84" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-38" target="6czE2A7BAYCyhHoQ09k4-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-42" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6czE2A7BAYCyhHoQ09k4-41">
+          <mxGeometry x="-0.2039" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-43" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-38" target="6czE2A7BAYCyhHoQ09k4-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-38" value="&lt;font size=&quot;1&quot;&gt;SSR成功？&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="259.63" y="955" width="200.37" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-40" value="&lt;font size=&quot;1&quot;&gt;调用vnode的insert钩子，并返回oldVnode&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="509.87" y="1080" width="160.13" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-46" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-44" target="6czE2A7BAYCyhHoQ09k4-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-44" target="6czE2A7BAYCyhHoQ09k4-37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="870" />
+              <mxPoint x="210" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-48" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6czE2A7BAYCyhHoQ09k4-47">
+          <mxGeometry x="-0.1302" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-44" value="&lt;font size=&quot;1&quot;&gt;是否为SSR？&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="259.63" y="830" width="200.37" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-49" target="6czE2A7BAYCyhHoQ09k4-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-49" value="&lt;font size=&quot;1&quot;&gt;根据vnode创建真实dom&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="274.01" y="1270" width="171.61" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-53" target="6czE2A7BAYCyhHoQ09k4-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-53" value="&lt;font size=&quot;1&quot;&gt;递归调用所有祖先节点中操作属性的destroy钩子以及create钩子&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="261.78" y="1430" width="196.06" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-58" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-55" target="6czE2A7BAYCyhHoQ09k4-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6czE2A7BAYCyhHoQ09k4-55" target="6czE2A7BAYCyhHoQ09k4-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-61" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6czE2A7BAYCyhHoQ09k4-60">
+          <mxGeometry x="-0.095" y="3" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-55" value="&lt;font size=&quot;1&quot;&gt;是否存在父级dom节点？&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="244.6" y="1590" width="230.44" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-57" value="&lt;font size=&quot;1&quot;&gt;从父级节点中递归销毁oldVnode对应节点的dom&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="261.71999999999997" y="1770" width="196.06" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6czE2A7BAYCyhHoQ09k4-59" value="&lt;font size=&quot;1&quot;&gt;递归调用oldVnode节点的destroy钩子销毁dom&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="537" y="1770" width="196.06" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
