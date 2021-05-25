@@ -1,1 +1,64 @@
-<mxfile host="app.diagrams.net" modified="2021-05-25T11:56:50.612Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" version="14.6.13" etag="I5bFMihvOftMI5XYWGwN" type="github"><diagram id="jWfXHrSi9yof77TV2d2q">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-25T12:13:23.882Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="SQsMHriJ_ynixIFM8Nh0" version="14.6.13" type="github">
+  <diagram id="jWfXHrSi9yof77TV2d2q" name="第 1 页">
+    <mxGraphModel dx="1058" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="727" pageHeight="669" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A8u2bj1OzfgNvkACQlRI-1" target="A8u2bj1OzfgNvkACQlRI-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-1" value="&lt;font size=&quot;1&quot;&gt;vm._update()&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="289" y="25" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A8u2bj1OzfgNvkACQlRI-3" target="A8u2bj1OzfgNvkACQlRI-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-3" value="&lt;font size=&quot;1&quot;&gt;vm.__patch__()&lt;br&gt;初始化渲染真实dom&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="59" y="225" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-13" value="生成patch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A8u2bj1OzfgNvkACQlRI-4" target="A8u2bj1OzfgNvkACQlRI-8">
+          <mxGeometry x="0.6468" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-4" value="&lt;font size=&quot;1&quot;&gt;vm.__patch__()&lt;br&gt;新旧vnode&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="509" y="225" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-18" value="返回真实dom" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A8u2bj1OzfgNvkACQlRI-5" target="A8u2bj1OzfgNvkACQlRI-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-5" value="&lt;font size=&quot;1&quot;&gt;patch&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="305" y="460" width="96" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A8u2bj1OzfgNvkACQlRI-7" target="A8u2bj1OzfgNvkACQlRI-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-15" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A8u2bj1OzfgNvkACQlRI-10">
+          <mxGeometry x="-0.1373" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A8u2bj1OzfgNvkACQlRI-7" target="A8u2bj1OzfgNvkACQlRI-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-16" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="A8u2bj1OzfgNvkACQlRI-11">
+          <mxGeometry x="-0.0919" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-7" value="&lt;span style=&quot;font-size: x-small&quot;&gt;prevVnode存在？&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="234" y="135" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-14" value="进入" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A8u2bj1OzfgNvkACQlRI-8" target="A8u2bj1OzfgNvkACQlRI-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-8" value="&lt;font size=&quot;1&quot;&gt;patch = createPatchFunction()&lt;br&gt;创建patch函数&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="235" y="325" width="235" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A8u2bj1OzfgNvkACQlRI-17" value="patch返回的真实dom重新赋值到vm.$el" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="266" y="585" width="174" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
