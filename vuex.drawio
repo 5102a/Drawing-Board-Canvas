@@ -1,1 +1,136 @@
-<mxfile host="app.diagrams.net" modified="2021-06-10T12:34:32.758Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" version="14.7.1" etag="VGXEYPJGnmPiM7lw41IF" type="github"><diagram id="eAi_wBPh36heo7Y1uhGe">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-06-10T13:19:10.556Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="gzkfTwEUUnjSxk6qFeTh" version="14.7.1" type="github">
+  <diagram id="eAi_wBPh36heo7Y1uhGe" name="第 1 页">
+    <mxGraphModel dx="1058" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1527" pageHeight="3069" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-18" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="563.9" y="860" width="316.1" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-9" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="563.9" y="320" width="316.1" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-4" value="&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;new Vuex.Store({})&lt;/span&gt;&lt;br style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;实例化全局store&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-2" target="OdZLdCP_P9DA4xVhO7JY-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-2" value="Vue.use(Vuex)&lt;br&gt;向Vue.options混入beforeCreate" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="645" y="180" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-6" target="OdZLdCP_P9DA4xVhO7JY-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-6" value="installModule递归初始化嵌套模块，并注册actions、mutations、getters、state等" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="613.75" y="350" width="212.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-10" target="OdZLdCP_P9DA4xVhO7JY-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-10" value="resetStoreVM通过实例化vm对state和getters进行响应式处理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="606.88" y="450" width="226.25" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-12" target="OdZLdCP_P9DA4xVhO7JY-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-12" value="执行所有Vuex使用的plugin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="613.75" y="560" width="213.12" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-17" value="&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;new Vue({store})&lt;/span&gt;&lt;br style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;实例化vm，使用store&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-14" target="OdZLdCP_P9DA4xVhO7JY-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-14" value="根据配置情况，开启devtool，并初始化插件钩子" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="613.75" y="650" width="213.12" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-16" value="new Vuex.Store({})" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="740" y="710" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-35" value="rerender" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-19" target="OdZLdCP_P9DA4xVhO7JY-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="1601" />
+              <mxPoint x="490" y="1395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-43" value="触发钩子" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-19" target="OdZLdCP_P9DA4xVhO7JY-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-19" value="执行mutation修改state，触发setter，执行dep.notify通知依赖更新" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="604.69" y="1570" width="230" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-20" target="OdZLdCP_P9DA4xVhO7JY-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-20" value="&lt;font size=&quot;1&quot;&gt;vm.$options = mergeOptions()&lt;br&gt;合并配置选项，从Vue.options中合并全局配置包括beforeCreate&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="595.78" y="880" width="248.44" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-21" value="vm._init初始化vm实例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="724" y="1250" width="156" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-22" target="OdZLdCP_P9DA4xVhO7JY-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-22" value="执行beforeCreate钩子，调用vuexInit挂载options.store或者options.parent.$store到this.$store" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="606.26" y="1030" width="226.87" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-24" target="OdZLdCP_P9DA4xVhO7JY-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-28" value="生成" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OdZLdCP_P9DA4xVhO7JY-27">
+          <mxGeometry x="0.1952" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-24" value="vm.$mount执行render生成vnode触发$store.state依赖收集" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="611.13" y="1180" width="218.36" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-26" target="OdZLdCP_P9DA4xVhO7JY-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-34" value="commit" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OdZLdCP_P9DA4xVhO7JY-32">
+          <mxGeometry x="0.2813" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-26" target="OdZLdCP_P9DA4xVhO7JY-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-37" value="dispatch" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OdZLdCP_P9DA4xVhO7JY-36">
+          <mxGeometry x="0.0445" y="1" relative="1" as="geometry">
+            <mxPoint x="42" y="36" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-26" value="Vue Components" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="613.14" y="1370" width="213.12" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-30" target="OdZLdCP_P9DA4xVhO7JY-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="997" y="1601" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-39" value="commit" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="OdZLdCP_P9DA4xVhO7JY-38">
+          <mxGeometry x="-0.4761" y="-3" relative="1" as="geometry">
+            <mxPoint x="3" y="-24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-41" value="Ajax" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="OdZLdCP_P9DA4xVhO7JY-30" target="OdZLdCP_P9DA4xVhO7JY-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-30" value="执行action异步操作，等待结果" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="890" y="1470" width="213.12" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-40" value="Backend API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="1470" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OdZLdCP_P9DA4xVhO7JY-42" value="Devtools" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="661.56" y="1710" width="116.25" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
