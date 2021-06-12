@@ -1,1 +1,145 @@
-<mxfile host="app.diagrams.net" modified="2021-06-12T12:12:20.641Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" version="14.7.7" etag="S5F0p5x-qkx50_RKe71B" type="github"><diagram id="p0-Eg4DXhp6AaQvhzDT2">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-06-12T13:30:16.604Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="zghO2hGz2BWj-3RoAn2U" version="14.7.7" type="github">
+  <diagram id="p0-Eg4DXhp6AaQvhzDT2" name="第 1 页">
+    <mxGraphModel dx="1284" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1527" pageHeight="3069" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-22" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="590" y="1070" width="380" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="590" y="280" width="380" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-5" value="new VueRouter({options})&lt;br&gt;实例化router" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-1" target="end7Kmi0AMrE8_2kCuEO-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-1" value="Vue.use(VueRouter)&lt;br&gt;向Vue.options混入&lt;br&gt;beforeCreate、destroyed钩子，并注册RouterView、RouterLink全局组件" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="665" y="100" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-2" target="end7Kmi0AMrE8_2kCuEO-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-2" value="&lt;font size=&quot;1&quot;&gt;createMatcher创建匹配器&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="680" y="310" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-4" target="end7Kmi0AMrE8_2kCuEO-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-4" value="&lt;font size=&quot;1&quot;&gt;createRouteMap创建路由映射&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="680" y="440" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-6" target="end7Kmi0AMrE8_2kCuEO-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-6" value="vm.$options = mergeOptions()&lt;br&gt;从Vue.options合并全局配置到vm.$options上，包括beforeCreate、destroyed" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1090" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-8" target="end7Kmi0AMrE8_2kCuEO-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-8" value="&lt;font size=&quot;1&quot;&gt;addRouteRecord&lt;br&gt;向路由映射添加路由记录&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="680" y="570" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-26" value="点击跳转、调用router.history.push&lt;br&gt;触发路由跳转" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-9" target="end7Kmi0AMrE8_2kCuEO-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-9" value="&lt;font size=&quot;1&quot;&gt;Vue Components&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="690" y="1660" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-11" target="end7Kmi0AMrE8_2kCuEO-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-11" value="&lt;font size=&quot;1&quot;&gt;new HTML5History、newHashHistory、new AbstractHistory根据模式创建history实例&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="675" y="710" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-12" target="end7Kmi0AMrE8_2kCuEO-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-17" value="new Vue({router})&lt;br&gt;实例化vm，使用router" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="end7Kmi0AMrE8_2kCuEO-16">
+          <mxGeometry x="0.169" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-12" value="&lt;font size=&quot;1&quot;&gt;添加历史记录&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="702.5" y="860" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-15" value="new VueRouter({options})" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="798" y="950" width="182" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-18" target="end7Kmi0AMrE8_2kCuEO-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-18" value="执行beforeCreate钩子，设置vm._router，并标记router当前route的组件实例" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1250" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-24" value="render" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-20" target="end7Kmi0AMrE8_2kCuEO-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-20" value="渲染RouterView组件，根据匹配的路由记录渲染对应的组件" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1420" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-23" value="new Vue({router})" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="798" y="1525" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-28" value="匹配路由对象" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-25" target="end7Kmi0AMrE8_2kCuEO-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-25" value="&lt;font size=&quot;1&quot;&gt;router.history.push中执行transitionTo&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="690" y="1860" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-30" value="导航确认，更新路由对象" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-38" target="end7Kmi0AMrE8_2kCuEO-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-27" target="end7Kmi0AMrE8_2kCuEO-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-37" value="解析异步组件" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="end7Kmi0AMrE8_2kCuEO-36">
+          <mxGeometry x="-0.2013" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-27" value="&lt;font size=&quot;1&quot;&gt;confirmTransition解析导航队列，依次执行beforeRouteLeave、beforeEach、beforeRouteUpdate、beforeEnter钩子&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="690" y="2010" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-29" target="end7Kmi0AMrE8_2kCuEO-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-29" value="&lt;font size=&quot;1&quot;&gt;添加hash记录、处理页面滚动&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="675" y="2480" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-31" target="end7Kmi0AMrE8_2kCuEO-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-31" target="end7Kmi0AMrE8_2kCuEO-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="785" y="2670" />
+              <mxPoint x="550" y="2670" />
+              <mxPoint x="550" y="1690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-41" value="更新DOM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="end7Kmi0AMrE8_2kCuEO-40">
+          <mxGeometry x="-0.2537" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-31" value="&lt;font size=&quot;1&quot;&gt;调用afterEach钩子&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="675" y="2590" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-33" value="&lt;font size=&quot;1&quot;&gt;在nextTick调用beforeRouteEnter&amp;nbsp;&lt;br&gt;钩子&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="667.5" y="2700" width="235" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="end7Kmi0AMrE8_2kCuEO-35" target="end7Kmi0AMrE8_2kCuEO-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-35" value="&lt;font size=&quot;1&quot;&gt;激活组件触发beforeRouteEnter钩子&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="652.5" y="2230" width="265" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="end7Kmi0AMrE8_2kCuEO-38" value="&lt;font size=&quot;1&quot;&gt;调用beforeResolve钩子&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="675" y="2350" width="220" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
